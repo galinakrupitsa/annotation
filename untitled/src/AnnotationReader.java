@@ -17,12 +17,12 @@ public class AnnotationReader {
                 System.out.println("Method " + method.getName() + ": value=" + ann.value());
             }
 
-            for (Method method2 : clazz.getDeclaredMethods()) {
+
                 if (method.isAnnotationPresent(Ann2.class)) {
                     Ann2 ann2 = method.getAnnotation(Ann2.class);
                     System.out.println("Method " + method.getName() + ": value=" + ann2.value());
                 }
-            }
+
 
             // Читаем аннотацию у полей
             for (Field field : clazz.getDeclaredFields()) {
