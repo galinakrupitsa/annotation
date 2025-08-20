@@ -1,11 +1,11 @@
 @MyAnnotation(value = "ExampleClass", version = 2)
-@Ann2(value = "Аннотация2")
+
 public class Example {
 
     @MyAnnotation("exampleField")
     private String field;
-    @MyAnnotation("Поле 2")
-    private int value;
+    @Ann2("Аннотация 2 для поля")
+    private String field2;
 
     @MyAnnotation(value = "doSomethingMethod")
     public void doSomething() {
